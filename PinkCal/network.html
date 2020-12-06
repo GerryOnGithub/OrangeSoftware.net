@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<!-- saved from url=(0035)http://www.orangesoftware.net/install.html -->
+
+<HTML><HEAD><TITLE></TITLE>
+
+<META content="text/html; charset=iso-8859-1" http-equiv=Content-Type>
+
+<META content="Microsoft FrontPage 4.0" name=GENERATOR>
+
+<STYLE><!-- 
+   	a {color:blue; text-decoration: none}
+	a:active {color:blue;} 
+	a:link {color:blue;} 
+	a:visited {color:blue;}
+	a:hover {color:magenta;background:lightblue;}
+   
+   li  { font-family: Garamond; font-size: 12pt }
+   td  { font-family: Garamond; font-size: 12pt }
+   p  { font-family: Garamond; font-size: 12pt }
+   h4  { font-family: Garamond; font-size: 12pt }
+
+--></STYLE>
+
+<script language="javascript" src="../environment.js"></script>
+</HEAD>
+
+<BODY bgColor=#ffffff onload="loadEnvironment()">
+
+<P align=center><A href="../pinkcal.html"><IMG border=0 src="../images/pc.gif" width="342" height="51">
+</A><BR><font size="5" face="Garamond">Simple Networking</font></P>
+
+<p align="left">This page describes the limited networking feature of Pink
+Calendar &amp; Day Planner. This feature is intended for small LAN environments only, such
+as those found in homes or very small offices. </p>
+
+<p align="left"><u>What the &quot;Share&quot; feature of PinkCal <font color="#0000FF">does
+do</font>:</u></p>
+
+<p align="left">When you select &quot;Share&quot; for a day planner entry
+PinkCal multicasts the selected entry out onto the
+network. Any <b> nearby and currently running</b> PinkCal will receive it and add
+the entry to
+its day planner. When PinkCal starts it will ask other PinkCal's for their
+shared day planner entries. This scheme generally works with small numbers of
+computers (e.g. 3 or 4) and small numbers of shared entries (e.g. 10 or 20 on
+each computer), such as you may have on a home network or very small office.</p>
+
+<p align="left"><u>What the &quot;Share&quot; feature of PinkCal <font color="#0000FF"> does not
+do</font>:</u></p>
+
+<p align="left">PinkCal does not broadcast the shared entry over the Internet.
+It does not use a database to store the entry (which would be needed to store updates
+centrally for later access by other clients).</p>
+
+<p align="left"><u>What you may need to do:</u></p>
+
+<p align="left">If your network gateways/routers block multicasts or you
+have a firewall, then you must enable multicast on IP <font face="Courier New">225.23.23.23</font>
+port <font face="Courier New">2323</font> for this feature to work. You can
+change these values by editing them in the registry (Current
+user/software/orange/PinkCal), but you take full responsibility for your
+actions.</p>
+
+<p align="left"><font color="#FF0000"><b>Note</b> that because networks are very
+complex it isn't possible for me to assist you with yours. Remember this program
+only costs $10. Consult the documentation for your
+network hardware and software.</font></p>
+
+<hr>
+
+<div id="environment" align="center"></div>
+
+</BODY></HTML>
+

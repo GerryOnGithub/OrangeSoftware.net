@@ -1,0 +1,260 @@
+Changes in 4.3 (July 2003)
+	- updated look of main menu
+	- various improvements in reliability of reading data file
+	- change naming for backup files
+	- improved dialog to read backup files
+	- changed license code
+
+Changes in 4.2 (June 2002)
+	- updated "Restore" to allow selection of backup file
+
+Changes in 4.2 (March 20, 2002)
+	- marketing release 4.2 (consolidate changes since last July)
+	- change license code
+
+Changes in 4.1 (Feb. 5, 2002)
+	- fixed bug with setting a repeater 6 months+ in the future
+
+Changes in 4.1 (Sept. 17, 2001)
+	- added a "News/Comics" feature where PinkCal will automatically
+	  open a web page once a day
+	- added a feature where if an appointment starts with a web address
+	  PinkCal will ask (when the time comes) if the user wants the 
+	  web page openned
+	- allow user to specify how long to display the appointment summary
+	  at startup
+
+Changes in 4.1 (Aug. 17, 2001)
+	- added registry value "quick" under "reminders" which defines how long
+	  the quick-check should be displayed for at program startup
+
+Changes in 4.1 (July 30, 2001)
+	- fixed display problem when editing long line in day planner
+
+Changes in 4.1 (July 1, 2001)
+	- changed the way the appointments file is read (should be more robust)
+	- changed the license code
+
+Changes in 4.0 (June 13, 2001)
+	- modified save/restore to keep the "repeat until"
+	- changed program startup "quick check" to 10 seconds minimum
+
+Changes in 4.0 (May 11, 2001)
+	- added Del key shortcut to day planner (to delete current line)
+	- added Delete command (and Del key support) to To-Do List.
+
+Changes in 4.0 (April 30, 2001)
+	- added "Copy to clipboard" to day planner, week view and to-do list (allows
+	  easy copying of information to other applications)
+
+Changes in 4.0 (April 5, 2001)
+	- added color support to appointment book
+
+Changes in 4.0 (March 21, 2001)
+	- added dialog to select backup location
+
+Changes in 4.0 (March 1, 2001)
+	- added separate categories for To-Do List (personal/work/other)
+	- added "scheduling" command to To-Do List
+	- added snooze button to pop-up reminders 
+	- fixed bug (problem restoring from file when text for day planner was really long)
+	- changed default colors for 16bit (or higher) color systems
+	- changed default font size
+	- fixed military time (wasn't showing early morning)
+
+Changes in 3.3b (Jan. 24, 2001)
+	- put back the saving of a backup file, since some people seem to need it
+	- added a delete command to the day planner
+	- change the way license codes work
+
+Changes in 3.3b (Jan. 7, 2001)
+	- changed the way PinkCal finds the PinkCal.data file
+
+Changes in 3.3b (Dec. 5, 2000)
+	- add menu item to visit web site
+	- modified default colors and font
+	- added a message for first time users to adjust colors/fonts to their own tastes
+
+Changes in 3.3 (Sept. 1, 2000)
+	- updated font so that for a new installation with a screen size of 800x600,
+	  the day planner will fit nicely on the screen
+	- stopped using the registry for long term storage of day planner entries
+	  (using a file instead)
+	- minor changes to some menus
+	- added handling of arrow keys to week view
+	- day summary icon (shown in taskbar) - added title, icon
+	- allow day planner entry to contain more characters
+	- added a couple more slots to the to-do list
+	- make the week summary, to-do list a bit wider
+
+Changes in 3.2.2 (June 4, 2000)
+	- added "Find" command to search for day planner entries
+	- changed Backup/Restore to work directly with the floppy drive
+
+Changes in 3.2.1
+	- added support for "skins"
+
+Changes in 3.2
+	- added ability to specify how long repeating appointment repeats
+	- added "everyday" repeater option
+	- enhanced day planner to 24 hours
+	- added automatic "continued" day planner entries (e.g. 8am - 9am, just
+	  enter a single quote for 8:30am and watch what happens)
+	- insured changing the background color affects all windows including dialogs
+	- added uninstall program
+	- fixed bug with European view (sometimes drew 1st in the wrong place)
+
+Changes in 3.1
+	- made most repeating entries show for a full year
+	- updated help file
+	- fixed bug causing a warning about the font being too big (for the year view)
+	        when it actually isn't
+	- fixed bug when selecting a day in the year view (year view kept the mouse)
+	- changed backup color of quick-view when looking at year view
+	- added keyboard shortcuts:
+		home key causes main window to jump to current month
+		left/right arrow scans month in main window
+		left/right arrow scans year in year view
+		enter in main window opens day planner
+	- added mouse wheel support to day planner window
+
+Changes in 3.0c
+	- added popup windows to year view
+	- added warning if font to large for year view
+
+Changes in 3.0b
+	- added popup (for year view)
+	- removed status bar
+
+Changes in 3.0a
+	- added popup window (quick-view) which shows days appointments 
+	  when mouse moves over the main window
+	- added high-light when mouse moves over the main window
+
+Changes in 3.0
+	- finalizes changes from 2.x releases
+	- use "fancier" fonts for calendar (bold for month, year and
+	  itialic for days of week)
+	- added highlights for when the mouse moves over the 
+	  main window
+	- status bar can show all appointments for a day
+	- escape can be used to close any window
+
+Changes in 2.5b
+	- change auto-backup to name the file "backup.mmm", where mmm
+	  is the current month
+	- fixed a bug where, from "View Week", when viewing 4 weeks
+	  and print was selected, only 2 weeks were printed
+	- added always on top
+
+Changes in 2.5a
+	- fixed a bug introduced in 2.5 [timer was ignored
+	    for a reminder when the "early" value was set more than 0]
+	- added a "refresh" which hits at midnight
+	- added keyboard shortcut (escape closes any window)
+	- removed "Splash" welcome screen, which speeds up startup
+	- left click on month/year (main window) to open Year View
+	- right click on month/year (main window) to scan back to 
+	  current month
+
+Changes in 2.5
+	- improved the way timers are used internally
+	- added a Spanish version
+	- added option for European Week
+	- added option for 24 clock
+
+Changes in 2.4
+	- fixed "yearly" repeating appointment which spanned leap year
+	- fixed font dialog to properly display currently selected font
+	- day planner properly resizes when new font selected
+	- add extra protection to insure main window is displayed on 
+	  the screen
+	- modified dialogs to use the main program background color as 
+	  the dialog background color
+
+Changes in 2.3
+	- fixed "weekly" repeating appointment (was scheduled too 
+	  far ahead)
+	- expanded Week View to display 1, 2 or 4 weeks
+	- added an automatic backup of day planner data
+
+Changes in 2.2
+	- added keyboard shortcuts
+
+Changes in 2.1d
+	- added better window sizing
+	- changed the way previous/next day refreshes the day planner
+
+Changes in 2.1c
+	- added "Edit" menu to Day Planner and To-Do List
+
+Changes in 2.1b
+	- added status bar support for the Year View
+
+Changes in 2.1
+	- added optional status bar
+	- added support for minimize on the main program bar
+	- added PC speaker support for systems without sound cards
+
+Changes in 2.0
+	- 2.0 consolidates releases 1.1 - 1.4, including small final touches
+		to the user interface
+	- changed default positioning of each window (e.g. year view is in the middle
+		of the screen, to-do list is lower left, week view is lower right)
+	- added automatic saving/restoring of window positions
+	- added Set Timer function
+	- added right click on calendar and year view to bring up week view for
+		the selected week
+	- added optional delete of repeating day planner entries when one is 	
+		deleted
+	- made improvements to the help file and added improved access to
+		the help file
+
+Changes in 2.0.4
+	- added "Clear Day" command
+	- added work-around for possible problem with high-color displays
+	- updated look of About dialog
+	- changed About dialog and help to show new web address and email
+	- made sure that Pink Calendar pops up on top when the PinkCal 
+	  icon is clicked on in the task bar
+
+Changes in 2.0.5
+	- made sure that when the icon is clicked on that the
+	  main window is displayed on top of other windows
+	- removed "minimize" from week, year and day planner views
+
+Changes in 2.0.6
+	- fixed problem (introduced in 2.0.4) related to automatic
+	  scheduling of repeating day planner entries
+
+Changes in 1.4
+	- refinements to Quick Help
+	- added print function to Year View, Week View and To-Do List
+	- added ability to set 'early' reminders by appointment
+	- added ability to enable reminders by appointment
+
+Changes in 1.3
+	- enhancements to view week interface
+	- enhancements to year view look
+	- added ability to "scan" years and see appointments in year view
+	- added ability to "scan" Week View
+	- changed program to appear icon tray rather than taskbar
+	- added backup and restore
+	- reorganized menus
+	- added "Quick Help"
+
+Changes in 1.2
+	- added View This Week, View Next Week
+	- enhanced using custom colors for 256 color screens
+	- enhanced support for Windows NT
+
+Changes in 1.1
+	- added font selection for day planner separate from calendar
+	- added ability to access day planner via year view
+	- fixed problem with setting reminder-timers for entries in the distant
+          future
+	- fixed a problem with saving the main windows position when the position was over
+	  the left side of the screen
+
+Changes in 1.0 (1996)
+	- first release!

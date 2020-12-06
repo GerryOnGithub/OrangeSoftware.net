@@ -1,0 +1,416 @@
+/*  quote.css  Sapphire  2014-05-26  jrg  */
+div#qqack h1,
+div#qquoteack h1,
+div#localeswitch h1,
+div#checkout h1 {
+  margin-bottom: 1em;
+  font-size: 140%;
+  color: black;
+}
+
+.center {
+  text-align: center;
+}
+
+#customquote form,
+form#qqForm {
+  padding: 0 !important;
+  margin-bottom: 10px;
+}
+
+#qqTbl {
+  border: none;
+  border-collapse: inherit;
+  width: 100%;
+}
+
+#qqTbl th {
+  border: none;
+  text-align: left;
+  padding: 10px 0 12px 0;
+  vertical-align: bottom;
+  font-weight: normal;
+  color: #ccc;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap;
+}
+
+#qqTbl td {
+  border: none;
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#qqTbl th + th {
+  width: 100%;
+}
+
+#qqTbl th:first-child,
+#qqTbl td:first-child {
+  white-space: nowrap;
+  text-align: center;
+  padding-left: 1px;
+  padding-right: 23px;
+}
+
+#qqTbl div.flyout > strong {
+  font-size: 110%;
+}
+
+#qqTbl div.flyout > span {
+  font-style: italic;
+  font-size: 92%;
+  font-weight: normal;
+  display: inline-block;
+  padding-top: 7px;
+}
+
+#qqTbl a {
+  font-size: 92%;
+}
+
+div.quote form p.center {
+  margin: 1em 0 0 0;
+}
+
+div#qqContent,
+div.quote form dl#rememberme,
+div.quote div.actions,
+div.quote form {
+  clear: both;
+}
+
+div.quote p.distmsg2 {
+  margin-top: 0.5em;
+}
+
+div#customquote div#quoteinfo label {
+  display: block;
+  margin-top: 3px;
+}
+
+div.quote dl#rememberme span {
+  font-size: 92%;
+}
+
+div.quoteack div#intro {
+  padding-bottom: 0;
+}
+
+div.quoteack div.col1 {
+  width: 50%;
+  float: left;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+div.quoteack div.col1 > div {
+  margin-right: 20px;
+}
+
+div.quoteack div.col2 {
+  width: 49.9%;
+  float: left;
+  margin-left: 0;
+  background: #f4f4f4;
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+div.quoteack div.col2 > div {
+  padding: 20px;
+}
+
+div.quoteack h4 {
+  margin-bottom: 0.7em;
+  margin-top: 1.7em;
+  font-size: 110%;
+}
+
+div.quoteack h4:first-child {
+  margin-top: 0;
+}
+
+div.quoteack th h4 {
+  font-size: 100%;
+  margin-bottom: 0;
+}
+
+div.quoteack dl,
+div.quoteack dd {
+  margin: 0 0 1em 0;
+}
+
+div.quoteack dt {
+  width: 14em;
+  text-align: right;
+}
+
+div.quoteack dd {
+  margin-top: -1.3em;
+  margin-left: 14.7em;
+  word-break: break-word;
+}
+
+div.quoteack div.contact p {
+  margin: -0.2em 0 0.8em 0;
+  font-size: 100%;
+}
+
+div.quoteack div.contact {
+  border: none;
+  padding: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  min-height: 0;
+}
+
+div.quoteack div.contact dt {
+  width: 6.5em;
+  text-align: left;
+}
+
+div.quoteack div.contact dd {
+  margin-left: 7em;
+  width: 22em;
+}
+
+div.quoteack div.col2 ul {
+  margin: 0 0 2em 0;
+}
+
+div.quoteack li {
+  margin-bottom: 0.5em;
+  margin-left: 20px;
+  padding: 0;
+  color: #666666;
+}
+
+div.quoteack table {
+  border: none;
+  margin-top: 5px;
+}
+
+div.quoteack div.col2 th {
+  border-top: 1px solid #c4c4c4;
+  padding-top: 15px;
+}
+
+div.quoteack th {
+  border: none;
+  padding: 4px 1em 3px 0;
+  text-align: left;
+}
+
+div.quoteack td {
+  border: none;
+  padding: 8px 1em 9px 2px;
+  border-top: 1px dotted #bebebe;
+  vertical-align: top;
+}
+
+div.quoteack tr.first td {
+  border: none;
+}
+
+div.quoteack td.right,
+div.quoteack th.right {
+  padding-right: 2px;
+  text-align: right;
+}
+
+div.quoteack th.right {
+  white-space: nowrap;
+}
+
+div.quoteack dd span {
+  display: none;
+}
+
+div.quoteack p.disclaimer {
+  font-size: 92%;
+  padding: 8px 0 0 0;
+  margin: 0.9em 0 1em 0;
+  border-top: 1px solid #c4c4c4;
+}
+
+div#contactsummary {
+  display: none;
+  padding-top: 10px;
+  word-wrap: break-word;
+}
+
+#contactsummary p:first-child {
+  margin-top: 0;
+}
+
+div#contactsummary a:visited {
+  color: #0085d5;
+}
+
+form label.disabled {
+  color: #bbbbbb;
+}
+
+@media print {
+  div.quoteack dd span {
+    display: inline;
+  }
+
+  div.quoteack div.col1,
+  div.quoteack div.col2 {
+    float: none;
+    display: block;
+    margin: 0 0 1.5em 0;
+    width: auto;
+  }
+}
+#customquote form table {
+  padding-top: 3px;
+  padding-left: 2px;
+  padding-bottom: 1px;
+}
+
+.quote input[type=text],
+.quote textarea,
+.quote #userinfo select {
+  width: 100%;
+  border: 1px solid #b5b0ad;
+}
+
+.quote input[type=text],
+.quote #userinfo select {
+  padding: 4px 0 2px 0;
+}
+
+.quote dl {
+  margin-bottom: 13px;
+}
+
+.quote dt {
+  text-align: left;
+}
+
+.quote form dd {
+  margin-left: 0;
+}
+
+.quote dl.state {
+  width: 55.5%;
+  position: absolute;
+  margin-top: 0;
+  left: 0;
+}
+
+.quote dl.zip {
+  margin-left: 60.5%;
+  text-align: right;
+}
+
+#customquote textarea {
+  margin: 13px 0 0 0;
+  height: 120px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 10px 0 0 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#quickcheckout div.provider p.distmsg2 {
+  margin-top: 0.5em;
+  padding-left: 20px;
+}
+
+div.quoteack ul.arrowlinks li {
+  margin: 0;
+}
+
+.quoteack ul.arrowlinks li a {
+  margin-bottom: 12px;
+}
+
+.contact dd {
+  position: relative;
+}
+
+.contact dd img {
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+
+div.quoteack div.contact dl.email {
+  margin-bottom: 0;
+}
+
+div.quoteack div.contact dl.email dd {
+  margin-bottom: 0;
+}
+
+.quote .privacy p {
+  margin: 0;
+}
+
+#customquote #quoteinfo > div > #rcqMsg,
+#qqMsg {
+  color: #019642;
+  margin-top: -8px;
+}
+
+#customquote #quoteinfo > div > #rcqMsg {
+  margin-bottom: 1.5em;
+}
+
+#customquote #quoteinfo h3 {
+  margin-top: 0;
+}
+
+#customquote #quoteinfo > div > * {
+  margin: 7px 0 0 0;
+}
+
+div.cqack div.col2 p {
+  margin: -0.2em 0 0 0;
+}
+
+#customquote #quoteinfo > div > p strong {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-size: 130%;
+}
+
+.lightbox #customquote #quoteinfo > div > p strong {
+  font-size: 110%;
+}
+
+.quote .wForm .oneField,
+.quote .wForm form .oneField {
+  padding: 0;
+}
+
+#rcqMsg > p:first-child,
+#qqMsg > p:first-child {
+  margin-top: 20px;
+}
+
+.quoteack p#contact,
+.quote p#contact {
+  margin-bottom: 0;
+}
+
+.quoteack p#contact a,
+.quote p#contact a {
+  margin-bottom: 0;
+  min-height: 17px;
+}
+
+.wForm p.edit,
+p.edit {
+  margin-bottom: 2em;
+}
+
+#customquote .scq {
+  white-space: normal;
+}
+

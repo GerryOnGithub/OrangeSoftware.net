@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><title>CopySpot - www.orangesoftware.net</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+#g_title p, #g_footer p, #g_description p {
+margin: 0;
+}
+/*
+-- -- -- -- -- -- --
+Browser Fixes
+-- -- -- -- -- -- --
+This file uses CSS filtering methods to fix various
+layout bugs.
+Each of the following three imported files is a separate, browser-specific CSS file that keeps all hacks out of the main style sheet.
+Over time, as supporting these browsers no longer
+remains a priority, cleaning up the hacks is as
+easy as deleting the @import statement below, or
+simply no longer linking this file from the HTML.
+*/
+/* fix ie6 "peekaboo bug" using the "holly hack". Note, this style only gets applied to ie6
+*/
+* html .wrapper {
+height: 0.1%;
+}
+/* * IE5 mac - overrides the IE/Win hack */
+/*\*//*/
+* html #threecolumn div {
+height: auto;
+}
+/**/
+/* * IE5/Win-specific CSS -ensures #container wraps all content on window resize
+*/
+@media tty {
+i{content:"\";/*" "*/}} * html #container { height: 1%; } /*";}
+}/* */
+/* Styling for editable elements. Eventually, this will be part of the style. */
+.editable {
+border: 1px dashed blue;
+}
+#footer {
+clear: both;
+}
+/* Extra divs hidden by default. The custom CSS can override this though */
+#extraDiv1, #extraDiv2, #extraDiv3, #extraDiv4, #extraDiv5, #extraDiv6 {
+display: none;
+}
+a img,:link img,:visited img {border: none;}
+/*
+-- -- -- -- -- -- --
+1 Column Layout
+-- -- -- -- -- -- --
+*/
+/* Center #container, constrain to 718px width
+----------------------------------------------- */
+body {
+text-align: center;
+}
+#container {
+width: 718px;
+text-align: left;
+margin: 0 auto;
+}
+#main-content {
+overflow: hidden;
+}
+/** BEGIN CUSTOM SKIN **/
+/*
+-- -- -- -- -- -- --
+Base CSS
+-- -- -- -- -- -- --
+This file simply removes default styling on most HTML elements in order to reduce the need to later override them.
+*/
+h1,h2,h3,h4,h5,h6,pre,code,p {font-size: 1em;}
+dl,li,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input {margin: 0; padding: 0;}
+a img,:link img,:visited img {border: none;}
+address {font-style: normal;}/*
+-- -- -- -- -- -- --
+Type Scheme: Deco
+-- -- -- -- -- -- --
+*/
+body {
+font: 76% Verdana, sans-serif;
+} h1, h2, h3, h4, h5, h6, p.description {
+font-family: "Trebuchet MS", Trebuchet, sans-serif;
+}
+h1 {
+font-size: 3em;
+font-weight: bold;
+letter-spacing: 2px;
+}
+h2 {
+font-size: 2em;
+font-weight: normal;
+}
+h3 {
+font-size: 1.5em;
+}
+h4 {
+font-size: 1.2em;
+letter-spacing: 0.2em;
+}
+h5 {
+font-size: 1.2em;
+}
+h6 {
+font-size: 1em;
+font-weight: bold;
+}
+p, td {
+line-height: 1.8em;
+}
+code, kbd {
+font-size: 1.25em;
+}/*
+-- -- -- -- -- -- --
+STYLE: Chemise
+-- -- -- -- -- -- --
+*/
+/* ie6win */
+#footer {
+height: 1%;
+}
+/* ie5mac */
+/*\*//*/
+#footer { height: auto; }
+/**/
+/* ie5 win */
+@media tty {
+i{content:"\";/*" "*/}} td, * html th { font-size: 0.8em; } h1 { height: 1%; } /*";}
+}/* */
+/* Basic HTML style
+----------------------------------------------- */
+a:link {
+padding: 0 2px;
+}
+body {
+font: 80% "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+}
+blockquote {
+margin: 1em 1em;
+font-style: italic;
+}
+caption {
+font-size: 1em;
+text-align: left;
+padding: 4px 6px;
+}
+font-weight: bold;
+}
+dd {
+margin: 0 0 1em 1em;
+}
+hr {
+color: #222;
+background: #222;
+border-color: #222;
+}
+td {
+padding: 2px 5px;
+vertical-align: top;
+}
+th {
+font-size: 1em;
+padding: 2px 5px;
+text-align: left;
+border-top: solid 1px #000;
+border-right: solid 1px #000;
+border-bottom: solid 1px #000;
+}
+td p {
+margin-top: 0;
+}
+ul li {
+margin-bottom: 0.8em;
+}
+ol li {
+list-style: lower-alpha;
+margin-left: 2em;
+margin-bottom: 0.8em;
+}
+/* Header
+----------------------------------------------- */
+#container {
+}
+#header {
+border-bottom: solid 1px #000;
+position: relative;
+margin: 0;
+margin-bottom: 10px;
+}
+p.description {
+font-size: 1em;
+margin: 0;
+padding: 0.5em 15px;
+border-bottom: solid 1px #000;
+}
+#g_description {
+margin: 1em 0 1em 15px;
+}
+/* Custom font definitions
+----------------------------------------------- */
+p {
+margin: 1em 0;
+line-height: 1.5;
+}
+td, td p {
+line-height: 1.5;
+}
+h1,h2,h3,h4,h5,h6 {
+font-family: "Trebuchet MS", arial, sans-serif;
+}
+h1 {
+text-align: left;
+font-weight: normal;
+font-size: 2em;
+font-weight: bold;
+line-height: 1.5em;
+padding: 30px 20px 10px 15px;
+margin: 0;
+border-top: solid 1px #000;
+border-bottom: solid 1px #000;
+}
+h2 {
+font-size: 1.5em;
+color: #000;
+margin: 0 0 1em 0;
+background: url(slateh2.gif) no-repeat left bottom;
+}
+h3 {
+font-size: 1.2em;
+padding: 4px 10px;
+margin-top: 0.5em;
+}
+h4 {
+margin-top: 0.6em;
+margin-left: 0.2em;
+font-size: 0.9em;
+}
+h5 {
+padding-left: 10px;
+font-size: 1em;
+}
+h6 {
+font-size: 0.9em;
+}
+a:link {
+color: #ffffff;
+}
+a:hover {
+background-color: #ffffff;
+}
+/* sidebar
+----------------------------------------------- */
+#sidebar, #sidebar-alternate {
+margin-bottom: 2em;
+}
+#sidebar h3, #sidebar-alternate h3 {
+font-weight: normal;
+font-size: 1.3em;
+border-top: solid 1px #000;
+margin-bottom: 0.5em;
+}
+#sidebar h4, #sidebar h5, #sidebar h6,
+#sidebar-alternate h4, #sidebar-alternate h5, #sidebar-alternate h6,
+#sidebar p, #sidebar-alternate p {
+margin-left: 10px;
+margin-right: 20px;
+}
+#sidebar li, #sidebar-alternate li {
+margin-bottom: 0.8em;
+}
+#sidebar .links {
+margin-bottom: 2em;
+}
+#adsense {
+text-align: center;
+}
+.editable {
+border: dashed 1px #666;
+}
+/* layout patches
+----------------------------------------------- */
+#twocolumn-liquid-left #sidebar {
+float: left;
+}
+#twocolumn-liquid-right #sidebar {
+float: right;
+}
+#threecolumn #sidebar-alternate {
+float: right;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+padding: 1px 15px;
+border-top: solid 1px #000;
+border-bottom: solid 1px #000;
+clear: both;
+}
+#footer hr {
+display: none;
+}
+/* fixed 1 column
+----------------------------------------------- */
+#onecolumn #main-content .wrapper {
+margin: 20px;
+}
+/* fixed left 2 column
+----------------------------------------------- */
+#twocolumn-left #main-content .wrapper {
+padding: 0 20px;
+}
+/* fixed right 2 column
+----------------------------------------------- */
+#twocolumn-right #main-content .wrapper {
+padding: 0 20px;
+}
+/* fixed right 3 column
+----------------------------------------------- */
+#threecolumn #main-content .wrapper {
+padding: 0 20px;
+}
+#threecolumn #sidebar h3, #threecolumn #sidebar-alternate h3 {
+margin-bottom: 0;
+}
+/* liquid left 2 column
+----------------------------------------------- */
+#twocolumn-liquid-left #main-content .wrapper {
+margin: 0 20px;
+}
+/* liquid right 2 column
+----------------------------------------------- */
+#twocolumn-liquid-right #main-content .wrapper {
+margin: 0 20px;
+}
+/*
+-- -- -- -- -- -- --
+COLOR SCHEME: Maraschino
+-- -- -- -- -- -- --
+*/
+/* Basic HTML style
+----------------------------------------------- */
+body {
+color: #323229;
+background: #D9D5B7 url(body-bg.gif) repeat-y center top;
+}
+caption {
+color: #fff;
+background: #D8261B;
+border: solid 1px #fff;
+border-bottom: 0;
+}
+code, kbd {
+color: #D8261B;
+}
+dt {
+color: #D8261B;
+}
+hr {
+background: #604829;
+border-color: #604829;
+border-top: none;
+}
+th {
+color: #575440;
+background: #C2BD9B;
+border: solid 1px #fff;
+}
+ul li {
+list-style: url(h5.gif);
+}
+/* Header
+----------------------------------------------- */
+#container {
+background: #D1DAE3;
+}
+#header {
+border: none;
+}
+p.description {
+color: #fff;
+background: #D8261B;
+border-top: solid 1px #fff;
+border-bottom: solid 1px #fff;
+}
+/* Custom font definitions
+----------------------------------------------- */
+h1 {
+color: #575440;
+background: #C2BD9B;
+border-top: solid 1px #fff;
+border-bottom: none;
+}
+h2 {
+color: #476B90;
+background: url(h2.gif) no-repeat left bottom;
+}
+h3 {
+color: #fff;
+background: #D8261B;
+}
+h4 {
+color: #476B90;
+border-bottom: dotted 1px #9AAEC2;
+}
+h5 {
+color: #D8261B;
+background: url(h5.gif) no-repeat left center;
+}
+a:link {
+color: #ffffff;
+border-bottom: 1px dotted #375440; text-decoration: none;
+}
+a:hover {
+color: #ff0000;
+border-bottom: 1px dotted #d8261b; text-decoration: none;
+}
+/* sidebar
+----------------------------------------------- */
+#sidebar, #sidebar-alternate {
+background: url(sidebar.gif) no-repeat right 0;
+}
+#twocolumn-right #sidebar, #twocolumn-liquid-right #sidebar, #threecolumn #sidebar-alternate {
+background: url(sidebar.gif) no-repeat left 0;
+}
+#sidebar h3, #sidebar-alternate h3 {
+color: #D8261B;
+background: none;
+border-top: none;
+}
+.editable {
+border: dashed 1px #000;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+color: #575440;
+background: #C2BD9B;
+border-top: solid 1px #fff;
+border-bottom: solid 1px #fff;
+}
+/** END CUSTOM SKIN **/
+</style><!-- Hack to avoid flash of unstyled content in IE -->
+<script> </script>
+<style type="text/css">
+<!--
+A:link {text-decoration: none}
+A:visited {text-decoration: none}
+A:active {text-decoration: none}
+A:hover {text-decoration: none}
+.style1:active {color:blue;} .style1:link {color:blue;} .style1:visited {color:blue;}
+-->
+</style></head>
+<body id="onecolumn" vlink="#ffffff">
+<div id="container">
+<div class="wrapper">
+<div id="header">
+<div class="wrapper">
+<h1 id="page-title">
+<div id="g_title">
+<div align="center">CopySpot </div>
+</div>
+</h1>
+<div style="clear: both;"></div>
+<p style="text-align: center;" class="description">
+Main&nbsp;&nbsp;&nbsp; <a href="CopySpotInstall.exe">Download</a>
+&nbsp;&nbsp;&nbsp;
+<a href="setup.html">Setup</a>&nbsp;&nbsp;&nbsp;
+<br/>
+</p>
+<div style="font-weight: bold;" id="g_description">
+<p align="center">Transfer files from one computer to
+another - easier than every before (for free)</p>
+</div>
+<div style="clear: both; text-align: center;">
+<img style="width: 91px; height: 91px;" alt="copyspot" src="copyspot.gif" /><br />
+The above is a screenshot of the program! <br />
+</div>
+</div>
+</div>
+<div id="main-content">
+<hr />
+<p align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3390016283419170";
+google_ad_width = 468;
+google_ad_height = 60;
+google_ad_format = "468x60_as";
+google_ad_type = "text";
+google_ad_channel = "";
+google_color_border = "336699";
+google_color_bg = "D1DAE3";
+google_color_link = "0094FF";
+google_color_text = "000000";
+google_color_url = "00AAFF";
+//-->
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></p>
+<div class="wrapper">
+<div class="content-item">
+<div id="g_body">
+<table border="0">
+<tbody>
+<tr>
+<td width="457">
+<p><b>Features</b></p>
+<ul>
+<li>Coping files from one computer to another is as easy
+as drag-and-drop</li>
+<li>Drag-and-drop now, copy later. CopySpot will wait
+until both computers are available</li>
+<li>Zero configuration for home network use (other than
+your firewall settings)</li>
+<li>Simple configuration for Internet use</li>
+<li>Copy files to FTP Server (not a full FTP client)</li>
+<li>Fast and reliable</li>
+<li>For Windows&nbsp;XP and Vista<br />
+Vista firewall&nbsp;not supported, please use a real firewall like
+SunBelt or Filseclab</li>
+</ul>
+</td>
+<td width="211">
+<p>&nbsp;</p>
+<p><a href="http://www.orangesoftware.net" class="style1">Pink Calendar &amp; Day Planner<br />
+</a>a fast fun and easy calendar and day planner program </p>
+<!--
+<p><a href="http://www.orangesoftware.net/or/BlackBook" class="style1">Black Book</a> <br />
+store your passwords and personal data using strong encryption </p>
+-->
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: bold;"></span>Currently
+version 2.0.2 beta.&nbsp;S<span style="font-weight: bold;"></span>upport
+CopySpot by trying <a href="../../" class="style1">Pink
+Calendar &amp; Day Planner</a></p>
+<p><b>Future Features</b></p>
+<ul>
+<li>Automatically download new files from FTP server</li>
+<li>Transferring
+files between two computers using an intermediary FTP sites means both
+computers do not need to be available at the same time</li>
+<li>Pause and Resume; Encryption; MD5 integrity checking</li>
+<li>Maybe support Vista's second-rate firewall</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div class="wrapper">
+<div id="g_footer">
+<p align="center">Copyright 2009 OrangeSoftware.net</p>
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
